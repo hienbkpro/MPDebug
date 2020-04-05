@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        URLSession.shared.dataTask(with: URL(string: "https://httpbin.org/absolute-redirect/302")!) { (data, response, error) in
+            print(data?.count ?? 0)
+        }
+        .resume()
+        
     }
 
 

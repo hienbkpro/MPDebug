@@ -8,22 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		BB45413C243A483B0093D43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45413B243A483B0093D43E /* AppDelegate.swift */; };
-		BB45413E243A483B0093D43E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45413D243A483B0093D43E /* SceneDelegate.swift */; };
 		BB454140243A483B0093D43E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB45413F243A483B0093D43E /* ViewController.swift */; };
 		BB454143243A483B0093D43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB454141243A483B0093D43E /* Main.storyboard */; };
 		BB454145243A483C0093D43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB454144243A483C0093D43E /* Assets.xcassets */; };
 		BB454148243A483C0093D43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB454146243A483C0093D43E /* LaunchScreen.storyboard */; };
+		BB454157243A48B90093D43E /* URLConnectionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = BB454151243A48B90093D43E /* URLConnectionInjector.m */; };
+		BB454158243A48B90093D43E /* MPDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB454153243A48B90093D43E /* MPDebug.swift */; };
+		BB454159243A48B90093D43E /* URLSessionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = BB454154243A48B90093D43E /* URLSessionInjector.m */; };
+		BB45415A243A48B90093D43E /* DataResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB454155243A48B90093D43E /* DataResponseParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB454138243A483B0093D43E /* MPDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB45413B243A483B0093D43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB45413D243A483B0093D43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BB45413F243A483B0093D43E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB454142243A483B0093D43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB454144243A483C0093D43E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB454147243A483C0093D43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB454149243A483C0093D43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB454150243A48B80093D43E /* MPDebug-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MPDebug-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB454151243A48B90093D43E /* URLConnectionInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLConnectionInjector.m; sourceTree = "<group>"; };
+		BB454152243A48B90093D43E /* URLSessionInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionInjector.h; sourceTree = "<group>"; };
+		BB454153243A48B90093D43E /* MPDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPDebug.swift; sourceTree = "<group>"; };
+		BB454154243A48B90093D43E /* URLSessionInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLSessionInjector.m; sourceTree = "<group>"; };
+		BB454155243A48B90093D43E /* DataResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResponseParser.swift; sourceTree = "<group>"; };
+		BB454156243A48B90093D43E /* URLConnectionInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLConnectionInjector.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +65,29 @@
 		BB45413A243A483B0093D43E /* MPDebug */ = {
 			isa = PBXGroup;
 			children = (
+				BB45414F243A487E0093D43E /* Sources */,
 				BB45413B243A483B0093D43E /* AppDelegate.swift */,
-				BB45413D243A483B0093D43E /* SceneDelegate.swift */,
 				BB45413F243A483B0093D43E /* ViewController.swift */,
 				BB454141243A483B0093D43E /* Main.storyboard */,
 				BB454144243A483C0093D43E /* Assets.xcassets */,
 				BB454146243A483C0093D43E /* LaunchScreen.storyboard */,
+				BB454150243A48B80093D43E /* MPDebug-Bridging-Header.h */,
 				BB454149243A483C0093D43E /* Info.plist */,
 			);
 			path = MPDebug;
+			sourceTree = "<group>";
+		};
+		BB45414F243A487E0093D43E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB454155243A48B90093D43E /* DataResponseParser.swift */,
+				BB454153243A48B90093D43E /* MPDebug.swift */,
+				BB454156243A48B90093D43E /* URLConnectionInjector.h */,
+				BB454151243A48B90093D43E /* URLConnectionInjector.m */,
+				BB454152243A48B90093D43E /* URLSessionInjector.h */,
+				BB454154243A48B90093D43E /* URLSessionInjector.m */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +122,7 @@
 				TargetAttributes = {
 					BB454137243A483B0093D43E = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -138,9 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB454159243A48B90093D43E /* URLSessionInjector.m in Sources */,
+				BB45415A243A48B90093D43E /* DataResponseParser.swift in Sources */,
+				BB454157243A48B90093D43E /* URLConnectionInjector.m in Sources */,
+				BB454158243A48B90093D43E /* MPDebug.swift in Sources */,
 				BB454140243A483B0093D43E /* ViewController.swift in Sources */,
 				BB45413C243A483B0093D43E /* AppDelegate.swift in Sources */,
-				BB45413E243A483B0093D43E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,17 +311,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UPJRMYQ38F;
 				INFOPLIST_FILE = MPDebug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manhpham.MPDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MPDebug/MPDebug-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,17 +333,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UPJRMYQ38F;
 				INFOPLIST_FILE = MPDebug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manhpham.MPDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MPDebug/MPDebug-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
