@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-enum DataResponseType {
+public enum DataResponseType {
     case json(value: String)
     case image(value: UIImage)
     case html(value: NSAttributedString)
 }
 
-struct DataResponse {
+public struct DataResponse {
     
     var originalData: Data?
     var type: DataResponseType!
@@ -24,7 +24,7 @@ struct DataResponse {
     }
 }
 
-enum DataResponseParser {
+public enum DataResponseParser {
     
     static func parse(data: Data) -> DataResponse? {
         if let jsonObject = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
