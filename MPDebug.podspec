@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MPDebug'
-  s.version          = '0.0.6'
+  s.version          = '0.0.7'
   s.summary          = 'A Debug Tools for iOS'
 
   s.description      = <<-DESC
@@ -14,5 +14,6 @@ A Debug Tools for iOS
 
   s.ios.deployment_target = '10.0'
   s.source_files = 'MPDebug/Sources/*'
+  s.public_header_files = 'MPDebug/Source/MPDebug-Header.h'
   s.swift_version = '5.0'
 end

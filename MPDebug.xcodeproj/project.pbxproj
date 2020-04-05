@@ -29,7 +29,7 @@
 		BB454144243A483C0093D43E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB454147243A483C0093D43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB454149243A483C0093D43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB454150243A48B80093D43E /* MPDebug-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MPDebug-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB454150243A48B80093D43E /* MPDebug-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MPDebug-Header.h"; sourceTree = "<group>"; };
 		BB454151243A48B90093D43E /* URLConnectionInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLConnectionInjector.m; sourceTree = "<group>"; };
 		BB454152243A48B90093D43E /* URLSessionInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionInjector.h; sourceTree = "<group>"; };
 		BB454153243A48B90093D43E /* MPDebugLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPDebugLog.swift; sourceTree = "<group>"; };
@@ -78,7 +78,6 @@
 				BB454141243A483B0093D43E /* Main.storyboard */,
 				BB454144243A483C0093D43E /* Assets.xcassets */,
 				BB454146243A483C0093D43E /* LaunchScreen.storyboard */,
-				BB454150243A48B80093D43E /* MPDebug-Bridging-Header.h */,
 				BB454149243A483C0093D43E /* Info.plist */,
 			);
 			path = MPDebug;
@@ -93,6 +92,7 @@
 				BB454151243A48B90093D43E /* URLConnectionInjector.m */,
 				BB454152243A48B90093D43E /* URLSessionInjector.h */,
 				BB454154243A48B90093D43E /* URLSessionInjector.m */,
+				BB454150243A48B80093D43E /* MPDebug-Header.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -342,7 +342,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manhpham.MPDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MPDebug/MPDebug-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MPDebug/Sources/MPDebug-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -364,7 +364,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.manhpham.MPDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MPDebug/MPDebug-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MPDebug/Sources/MPDebug-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
