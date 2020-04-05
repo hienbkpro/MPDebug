@@ -13,7 +13,7 @@
 		BB454145243A483C0093D43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB454144243A483C0093D43E /* Assets.xcassets */; };
 		BB454148243A483C0093D43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB454146243A483C0093D43E /* LaunchScreen.storyboard */; };
 		BB454157243A48B90093D43E /* URLConnectionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = BB454151243A48B90093D43E /* URLConnectionInjector.m */; };
-		BB454158243A48B90093D43E /* MPDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB454153243A48B90093D43E /* MPDebug.swift */; };
+		BB454158243A48B90093D43E /* MPDebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB454153243A48B90093D43E /* MPDebugLog.swift */; };
 		BB454159243A48B90093D43E /* URLSessionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = BB454154243A48B90093D43E /* URLSessionInjector.m */; };
 		BB45415A243A48B90093D43E /* DataResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB454155243A48B90093D43E /* DataResponseParser.swift */; };
 		BB45415F243A58A70093D43E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB45415C243A58A70093D43E /* README.md */; };
@@ -32,13 +32,13 @@
 		BB454150243A48B80093D43E /* MPDebug-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MPDebug-Bridging-Header.h"; sourceTree = "<group>"; };
 		BB454151243A48B90093D43E /* URLConnectionInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLConnectionInjector.m; sourceTree = "<group>"; };
 		BB454152243A48B90093D43E /* URLSessionInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionInjector.h; sourceTree = "<group>"; };
-		BB454153243A48B90093D43E /* MPDebug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPDebug.swift; sourceTree = "<group>"; };
+		BB454153243A48B90093D43E /* MPDebugLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPDebugLog.swift; sourceTree = "<group>"; };
 		BB454154243A48B90093D43E /* URLSessionInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLSessionInjector.m; sourceTree = "<group>"; };
 		BB454155243A48B90093D43E /* DataResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResponseParser.swift; sourceTree = "<group>"; };
 		BB454156243A48B90093D43E /* URLConnectionInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLConnectionInjector.h; sourceTree = "<group>"; };
 		BB45415C243A58A70093D43E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		BB45415D243A58A70093D43E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
-		BB45415E243A58A70093D43E /* MPDebug.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = MPDebug.podspec; sourceTree = SOURCE_ROOT; };
+		BB45415E243A58A70093D43E /* MPDebug.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = MPDebug.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				BB454155243A48B90093D43E /* DataResponseParser.swift */,
-				BB454153243A48B90093D43E /* MPDebug.swift */,
+				BB454153243A48B90093D43E /* MPDebugLog.swift */,
 				BB454156243A48B90093D43E /* URLConnectionInjector.h */,
 				BB454151243A48B90093D43E /* URLConnectionInjector.m */,
 				BB454152243A48B90093D43E /* URLSessionInjector.h */,
@@ -185,7 +185,7 @@
 				BB454159243A48B90093D43E /* URLSessionInjector.m in Sources */,
 				BB45415A243A48B90093D43E /* DataResponseParser.swift in Sources */,
 				BB454157243A48B90093D43E /* URLConnectionInjector.m in Sources */,
-				BB454158243A48B90093D43E /* MPDebug.swift in Sources */,
+				BB454158243A48B90093D43E /* MPDebugLog.swift in Sources */,
 				BB454140243A483B0093D43E /* ViewController.swift in Sources */,
 				BB45413C243A483B0093D43E /* AppDelegate.swift in Sources */,
 			);

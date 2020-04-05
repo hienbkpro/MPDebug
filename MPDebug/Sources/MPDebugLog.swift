@@ -1,5 +1,5 @@
 //
-//  MPDebug.swift
+//  MPDebugLog.swift
 //  MyApp
 //
 //  Created by Manh Pham on 4/5/20.
