@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class MPDebug: NSObject {
+final class MPDebugLog: NSObject {
         
-    static let share = MPDebug()
+    static let share = MPDebugLog()
     
     private var urlSessionInjector: URLSessionInjector?
     private var urlConnectionInjector: URLConnectionInjector?
@@ -28,7 +28,7 @@ final class MPDebug: NSObject {
     
 }
 
-extension MPDebug: URLSessionInjectorDelegate {
+extension MPDebugLog: URLSessionInjectorDelegate {
     func urlSessionInjector(_ injector: URLSessionInjector!, didStart dataTask: URLSessionDataTask!) {
         run {
             print("URLSessionInjectorDelegate didStart")
@@ -61,7 +61,7 @@ extension MPDebug: URLSessionInjectorDelegate {
     }
 }
 
-extension MPDebug: URLConnectionInjectorDelegate {
+extension MPDebugLog: URLConnectionInjectorDelegate {
     func urlConnectionInjector(_ injector: URLConnectionInjector!, didReceiveResponse urlConnection: NSURLConnection!, response: URLResponse!) {
 
     }
