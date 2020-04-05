@@ -11,7 +11,6 @@ import UIKit
 enum DataResponseType {
     case json(value: String)
     case image(value: UIImage)
-    case text(value: String)
     case html(value: NSAttributedString)
 }
 
@@ -47,11 +46,8 @@ enum DataResponseParser {
             var textData = DataResponse(data: data)
             textData.type = .html(value: htmlString)
             return textData
-        } else if let dataString = String(data: data, encoding: .utf8) {
-            var textData = DataResponse(data: data)
-            textData.type = .text(value: dataString)
-            return textData
         }
         return nil
     }
+    
 }

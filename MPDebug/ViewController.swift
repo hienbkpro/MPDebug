@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        URLSession.shared.dataTask(with: URL(string: "https://httpbin.org/absolute-redirect/302")!) { (data, response, error) in
-            print(data?.count ?? 0)
+        URLSession.shared.dataTask(with: URL(string: "https://httpbin.org/ip")!) { (data, response, error) in
+            print("Total \(data?.count ?? 0)")
         }
         .resume()
         
